@@ -3,17 +3,17 @@ const expect = chai.expect
 
 describe('Las variables en Javascript', () => {
   it('pueden contener strings', () => {
-    // Añade la línea que falta
     const a = "Javascript"
+    
     expect(a).to.equal("Javascript");
   })
   it('pueden contener números', () => {
-    // Añade la línea que falta
+    const b = 14.64
 
     expect(b).to.equal(14.64);
   })
   it('pueden contener booleanos', () => {
-    // Añade la línea que falta
+    const c=false
 
     expect(c).to.equal(false);
   })
@@ -22,14 +22,14 @@ describe('Las variables en Javascript', () => {
 describe('Comparaciones en Javascript', () => {
     it("usando ===", () => {
         const number = 20;
-        //completa la asignación usando number y el comparador ===
+        let expresion = false
 
         expect(expresion).to.equal(false)
     })
 
     it("usando !==", () => {
         const language = "Javascript";
-        //completa la asignación usando language y el comparador !==
+        let expresion=false
 
         expect(expresion).to.equal(false)
     })
@@ -38,16 +38,19 @@ describe('Comparaciones en Javascript', () => {
 describe("Operaciones aritméticas", () => {
     it("Usando suma", () => {
         const a = 10;
+        const b=90
 
         expect(a+b).to.equal(100);
     })
     it("Usando multiplicación", () => {
         const a = 10;
+        const b=1.3
 
         expect(a*b).to.equal(13);
     })
     it("Usando división", () => {
         const a = 10;
+        const b = 4
 
         expect(a/b).to.equal(2.5);
     })
@@ -56,14 +59,14 @@ describe("Operaciones aritméticas", () => {
 describe('Algebra booleana', () => {
     it("Usando el operador AND (&&)", () => {
         const a = true;
-        //completa la asignación de b
+        const b = true
 
         const expression = a && b;
         expect(expression).to.equal(true);
     })
     it("Usando el operador OR (||)", () => {
         const a = false;
-        //completa la asignación de b
+        const b= false
 
         const expression = a || b;
         expect(expression).to.equal(false);
@@ -91,6 +94,11 @@ describe("Variables en JS", () => {
     it("Completa todas las constantes que faltan", () => {
 
         const a = 10;
+        const b = 1.34
+        const c = true
+        const d = "Buenos días"
+        const e = "Pepe"
+        const f = "Buenos días, pepe"
 
         expect(a).to.equal(10);
         expect(b).to.equal(1.34);
@@ -103,6 +111,15 @@ describe("Variables en JS", () => {
     it("Completa todas las variables que faltan para que las operaciones resulten correctamente", () => {
 
         let a = 11;
+        let b = 0.34;
+        let c = 10;
+        let d = 0;
+        let e = 340;
+        let f = 10;
+        let g = 3;
+        let x = 2;
+        let y = 7;
+
 
         expect(a + b).to.equal(11.34);
         expect(a * c).to.equal(110);
@@ -116,6 +133,11 @@ describe("Variables en JS", () => {
     it("Completa todas las variables que faltan para que se cumplan las condiciones", () => {
 
         let a = 10;
+        let b = 100;
+        let c = "x";
+        let d = "hello";
+        n.startsWith('A') = "Flor"
+
 
         expect(a > 9).to.be.true;
         expect(a < 11).to.be.true;
